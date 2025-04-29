@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/wechat.js" defer></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">我的个人网站</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#experiences">经历</a></li>
+                    <li><a href="#contact">联系我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 关于我部分 -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/截屏2025-04-24 下午9.16.04.png" alt="个人照片" id="profile-image">
+                    </div>
+                    <div class="about-text">
+                        <h3>你好，我是<span class="highlight">张紫阳（Caleb.Zhang)</span></h3>
+                        <p>典型INTJ建筑型人格，擅长战略规划和理性分析；经典金牛座人格，比较慢热，不会轻易表达情感，倾向于用实际行动表达关心；关心历史超过关心未来，正因如此才相信技术变革是人类走出历史周期最重要的因素。立志要做全中国最懂国际关系史的产品经理</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link wechat-link" title="点击查看微信二维码"><i class="fab fa-weixin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 经历部分 -->
+        <section id="experiences" class="section">
+            <div class="container">
+                <h2 class="section-title">我的经历</h2>
+                <div class="experiences-container" id="experiences-list">
+                    <!-- 经历卡片将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 联系部分 -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>1667408610@qq.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+86 155 5592 4439</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>上海市，中国</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 我的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
