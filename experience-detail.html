@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经历详情 - 我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">我的个人网站</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">关于我</a></li>
+                    <li><a href="index.html#experiences">经历</a></li>
+                    <li><a href="index.html#works">作品</a></li>
+                    <li><a href="index.html#contact">联系我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <div class="container">
+            <!-- 返回按钮 -->
+            <div class="detail-header">
+                <a href="index.html#experiences" class="back-button">
+                    <i class="fas fa-arrow-left"></i> 返回经历列表
+                </a>
+            </div>
+            
+            <!-- 经历详情内容 -->
+            <section class="section">
+                <div id="experience-detail">
+                    <!-- 详情内容将通过JavaScript动态生成 -->
+                </div>
+                
+                <!-- 错误信息容器（当找不到对应经历时显示） -->
+                <div id="error-container" class="error-container" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h2>未找到经历信息</h2>
+                    <p>抱歉，我们无法找到您请求的经历详情。</p>
+                    <a href="index.html#experiences" class="btn">返回经历列表</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 我的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="js/data.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>
